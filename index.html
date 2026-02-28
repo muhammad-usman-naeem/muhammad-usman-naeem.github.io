@@ -44,14 +44,24 @@
     }
 
     .main {
-      max-width: 700px;
+      max-width: 760px;
+    }
+
+    .intro-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
     }
 
     .photo {
-      width: 180px;
+      width: 240px;
       height: auto;
       display: block;
-      margin-bottom: 28px;
+      flex-shrink: 0;
+    }
+
+    .text-block {
+      max-width: 460px;
     }
 
     .bio {
@@ -61,7 +71,7 @@
 
     .email {
       font-size: 17px;
-      margin-top: 10px;
+      margin-top: 6px;
     }
 
     .email a {
@@ -86,8 +96,17 @@
         margin-right: 20px;
       }
 
+      .intro-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+
       .photo {
-        width: 150px;
+        width: 180px;
+      }
+
+      .text-block {
+        max-width: 100%;
       }
 
       .bio {
@@ -107,17 +126,21 @@
     </header>
 
     <main class="main">
-      <img src="usman-naeem.jpeg" alt="Muhammad Usman Naeem" class="photo" />
+      <div class="intro-row">
+        <img src="usman-naeem.jpeg" alt="Muhammad Usman Naeem" class="photo" />
 
-      <p class="bio">
-        I am a PhD candidate in Economics and Public Policy at Tufts University.
-        My research is in development, environmental, and behavioural economics.
-        My work uses field experiments and applied empirical methods.
-      </p>
+        <div class="text-block">
+          <p class="bio">
+            I am a PhD candidate in Economics and Public Policy at Tufts University.
+            My research is in development, environmental, and behavioural economics.
+            My work uses field experiments and applied empirical methods.
+          </p>
 
-      <p class="email">
-        <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a>
-      </p>
+          <p class="email">
+            <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a>
+          </p>
+        </div>
+      </div>
     </main>
   </div>
 </body>
