@@ -7,37 +7,35 @@
   <style>
     body {
       margin: 0;
+      background: #ffffff;
+      color: #111111;
       font-family: Arial, sans-serif;
-      color: #222;
-      background-color: #ffffff;
       line-height: 1.6;
     }
 
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 24px 60px;
+      padding: 40px 24px 80px;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 30px;
-      border-bottom: 1px solid #e5e5e5;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
-    .site-name {
+    .name {
       font-size: 28px;
-      font-weight: 600;
+      font-weight: 500;
       margin: 0;
     }
 
     nav a {
-      margin-left: 24px;
+      margin-left: 28px;
       text-decoration: none;
-      color: #222;
+      color: #111111;
       font-size: 15px;
     }
 
@@ -45,94 +43,86 @@
       text-decoration: underline;
     }
 
-    .intro {
+    .main {
       max-width: 700px;
     }
 
-    .intro h1 {
-      font-size: 42px;
-      font-weight: 600;
-      margin-bottom: 12px;
+    .photo {
+      width: 180px;
+      height: auto;
+      display: block;
+      margin-bottom: 28px;
     }
 
-    .intro p {
+    .bio {
       font-size: 18px;
-      margin-bottom: 18px;
-    }
-
-    .section {
-      margin-top: 50px;
-    }
-
-    .section h2 {
-      font-size: 24px;
-      margin-bottom: 16px;
-    }
-
-    .section ul {
-      padding-left: 20px;
-    }
-
-    .section li {
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: #1a1a1a;
+      margin: 0 0 16px 0;
     }
 
     .email {
-      margin-top: 20px;
       font-size: 17px;
+      margin-top: 10px;
+    }
+
+    .email a {
+      color: #111111;
+      text-decoration: none;
+    }
+
+    .email a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+
+      .photo {
+        width: 150px;
+      }
+
+      .bio {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <p class="site-name">Muhammad Usman Naeem</p>
+      <p class="name">Muhammad Usman Naeem</p>
       <nav>
-        <a href="#research">Research</a>
-        <a href="#links">Links</a>
-        <a href="mailto:usman.naeem@tufts.edu">Contact</a>
+        <a href="#">Research</a>
+        <a href="#">CV</a>
       </nav>
     </header>
 
-    <main>
-      <section class="intro">
-        <h1>Muhammad Usman Naeem</h1>
-        <p>
-          PhD Candidate in Economics and Public Policy, Tufts University.
-        </p>
-        <p>
-          I am an applied microeconomist working on energy, environment, and development,
-          with a focus on field experiments and policy-relevant research in Pakistan.
-        </p>
-        <p>
-          My research studies behavioural and market frictions in areas including
-          vehicular emissions, electricity, and agricultural burning.
-        </p>
-        <p class="email">
-          Email: <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a>
-        </p>
-      </section>
+    <main class="main">
+      <img src="your-photo.jpg" alt="Muhammad Usman Naeem" class="photo" />
 
-      <section class="section" id="research">
-        <h2>Research</h2>
-        <ul>
-          <li>Job Market Paper (coming soon)</li>
-          <li>Working Papers (coming soon)</li>
-          <li>Work in Progress (coming soon)</li>
-        </ul>
-      </section>
+      <p class="bio">
+        I am a PhD Candidate in Economics and Public Policy at Tufts University.
+        My research is in applied microeconomics, with a focus on energy, environment,
+        and development.
+      </p>
 
-      <section class="section" id="links">
-        <h2>Links</h2>
-        <ul>
-          <li><a href="#">CV (coming soon)</a></li>
-          <li><a href="#">Google Scholar (coming soon)</a></li>
-        </ul>
-      </section>
+      <p class="bio">
+        I study behavioural and market frictions using field experiments and
+        policy-relevant empirical work, with a particular focus on Pakistan.
+      </p>
+
+      <p class="email">
+        <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a>
+      </p>
     </main>
   </div>
 </body>
