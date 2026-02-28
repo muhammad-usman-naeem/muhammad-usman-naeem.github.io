@@ -1,23 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Muhammad Usman Naeem</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 50px;
+    }
+
+    .site-name {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #222;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      max-width: 700px;
+    }
+
+    .intro h1 {
+      font-size: 42px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section {
+      margin-top: 50px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .section li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #1a1a1a;
+    }
+
+    .email {
+      margin-top: 20px;
+      font-size: 17px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Muhammad Usman Naeem</h1>
-  <p>PhD Candidate in Economics and Public Policy, Tufts University.</p>
+  <div class="container">
+    <header>
+      <p class="site-name">Muhammad Usman Naeem</p>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#links">Links</a>
+        <a href="mailto:usman.naeem@tufts.edu">Contact</a>
+      </nav>
+    </header>
 
-  <p>Welcome to my website.</p>
+    <main>
+      <section class="intro">
+        <h1>Muhammad Usman Naeem</h1>
+        <p>
+          PhD Candidate in Economics and Public Policy, Tufts University.
+        </p>
+        <p>
+          I am an applied microeconomist working on energy, environment, and development,
+          with a focus on field experiments and policy-relevant research in Pakistan.
+        </p>
+        <p>
+          My research studies behavioural and market frictions in areas including
+          vehicular emissions, electricity, and agricultural burning.
+        </p>
+        <p class="email">
+          Email: <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a>
+        </p>
+      </section>
 
-  <h2>Research</h2>
-  <p>Job Market Paper: Coming soon</p>
+      <section class="section" id="research">
+        <h2>Research</h2>
+        <ul>
+          <li>Job Market Paper (coming soon)</li>
+          <li>Working Papers (coming soon)</li>
+          <li>Work in Progress (coming soon)</li>
+        </ul>
+      </section>
 
-  <h2>CV</h2>
-  <p>Coming soon</p>
-
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a></p>
+      <section class="section" id="links">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="#">CV (coming soon)</a></li>
+          <li><a href="#">Google Scholar (coming soon)</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
