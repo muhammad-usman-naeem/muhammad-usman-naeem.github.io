@@ -48,41 +48,49 @@
       max-width: 880px;
     }
 
-.intro-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 44px;
-}
-
-.photo {
-  width: 300px;
-  height: auto;
-  display: block;
-  flex-shrink: 0;
-  margin-top: 22px;
-}
-
-.text-block {
-  max-width: 560px;
-}
-
-    .bio {
-      font-size: 19px;
-      margin: 0 0 14px 0;
+    .intro-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 44px;
     }
 
-    .email {
-      font-size: 18px;
-      margin-top: 4px;
+    .photo-block {
+      flex-shrink: 0;
     }
 
-    .email a {
+    .photo {
+      width: 300px;
+      height: auto;
+      display: block;
+      margin-top: 22px;
+    }
+
+    .contact-block {
+      margin-top: 14px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .contact-block p {
+      margin: 0 0 6px 0;
+    }
+
+    .contact-block a {
       color: #111111;
       text-decoration: none;
     }
 
-    .email a:hover {
+    .contact-block a:hover {
       text-decoration: underline;
+    }
+
+    .text-block {
+      max-width: 560px;
+    }
+
+    .bio {
+      font-size: 19px;
+      margin: 0 0 14px 0;
     }
 
     @media (max-width: 700px) {
@@ -92,39 +100,40 @@
         gap: 12px;
         margin-bottom: 40px;
       }
-    
+
       nav a {
         margin-left: 0;
         margin-right: 20px;
         font-size: 16px;
         font-weight: 500;
       }
-    
+
       .intro-row {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
       }
-.photo {
-  width: 210px;
-  margin-top: 0;
-}
 
-.text-block {
-  max-width: 100%;
-  padding-top: 0;
-}
-    
+      .photo {
+        width: 210px;
+        margin-top: 0;
+      }
+
+      .contact-block {
+        font-size: 15px;
+        margin-top: 12px;
+      }
+
+      .text-block {
+        max-width: 100%;
+      }
+
       .name {
         font-size: 28px;
       }
-    
+
       .bio {
         font-size: 18px;
-      }
-    
-      .email {
-        font-size: 17px;
       }
     }
   </style>
@@ -141,22 +150,26 @@
 
     <main class="main">
       <div class="intro-row">
-        <img src="usman-naeem.jpeg" alt="Muhammad Usman Naeem" class="photo" />
+        <div class="photo-block">
+          <img src="usman-naeem.jpeg" alt="Muhammad Usman Naeem" class="photo" />
 
-        <div class="text-block"><p class="bio">
-  I am a PhD candidate in Economics and Public Policy at Tufts University. My research is in development, environmental, and behavioural economics. I am also a Fellow in the Department of Economics at Harvard University.
-</p>
+          <div class="contact-block">
+            <p><a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a></p>
+            <p><a href="https://x.com/usmann1504" target="_blank" rel="noopener noreferrer">@usmann1504</a></p>
+          </div>
+        </div>
 
-<p class="bio">
-  My work uses field experiments to study the psychological and economic forces shaping electricity markets, air pollution, and climate policy in low-income countries, with a focus on Pakistan.
-</p>
+        <div class="text-block">
+          <p class="bio">
+            I am a PhD candidate in Economics and Public Policy at Tufts University. My research is in development, environmental, and behavioural economics. I am also a Fellow in the Department of Economics at Harvard University.
+          </p>
 
-<p class="bio">
-  Previously, I was a Country Economist at the International Growth Centre.
-</p>
+          <p class="bio">
+            My work uses field experiments to study the psychological and economic forces shaping electricity markets, air pollution, and climate policy in low-income countries, with a focus on Pakistan.
+          </p>
 
-          <p class="email">
-            <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a>
+          <p class="bio">
+            Previously, I was a Country Economist at the International Growth Centre.
           </p>
         </div>
       </div>
