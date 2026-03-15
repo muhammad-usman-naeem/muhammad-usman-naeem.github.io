@@ -65,27 +65,33 @@
       margin-top: 0;
     }
 
-    .contact-block {
+    .contact-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
       margin-top: 14px;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #111111;
+      text-decoration: none;
       font-size: 16px;
       line-height: 1.4;
     }
 
-    .contact-block p {
-      margin: 0 0 6px 0;
-    }
-
-    .contact-block a {
-      color: #111111;
-      text-decoration: none;
-    }
-
-    .contact-block a:hover {
+    .contact-link:hover {
       text-decoration: underline;
     }
 
-    .contact-label {
-      font-weight: 500;
+    .contact-link svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      flex-shrink: 0;
     }
 
     .text-block {
@@ -123,9 +129,12 @@
         margin-top: 0;
       }
 
-      .contact-block {
-        font-size: 15px;
+      .contact-links {
         margin-top: 12px;
+      }
+
+      .contact-link {
+        font-size: 15px;
       }
 
       .text-block {
@@ -157,9 +166,20 @@
         <div class="photo-block">
           <img src="usman-naeem.jpeg" alt="Muhammad Usman Naeem" class="photo" />
 
-          <div class="contact-block">
-            <p><span class="contact-label">Email:</span> <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a></p>
-            <p><span class="contact-label">X:</span> <a href="https://x.com/usmann1504" target="_blank" rel="noopener noreferrer">@usmann1504</a></p>
+          <div class="contact-links">
+            <a href="mailto:usman.naeem@tufts.edu" class="contact-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm0 1.5v.3l8 5.2 8-5.2v-.3H4zm16 9V9.6l-7.4 4.8a1 1 0 0 1-1.2 0L4 9.6v6.9h16z"/>
+              </svg>
+              <span>Email</span>
+            </a>
+
+            <a href="https://x.com/usmann1504" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="X">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.9L6 22H2.9l7.3-8.4L1 2h6.3l4.3 6.2L18.9 2zm-1.1 18h1.7L5.1 3.9H3.3L17.8 20z"/>
+              </svg>
+              <span>X</span>
+            </a>
           </div>
         </div>
 
