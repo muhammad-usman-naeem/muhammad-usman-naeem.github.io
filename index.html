@@ -58,11 +58,20 @@
       flex-shrink: 0;
     }
 
-    .photo {
+    .photo-frame {
       width: 340px;
-      height: auto;
+      height: 340px;
+      overflow: hidden;
+    }
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 28%;
+      transform: scale(1.08);
+      transform-origin: center;
       display: block;
-      margin-top: 0;
     }
 
     .contact-block {
@@ -135,9 +144,9 @@
         gap: 20px;
       }
 
-      .photo {
+      .photo-frame {
         width: 210px;
-        margin-top: 0;
+        height: 210px;
       }
 
       .contact-block {
@@ -172,7 +181,9 @@
     <main class="main">
       <div class="intro-row">
         <div class="photo-block">
-          <img src="usman-naeem.png" alt="Muhammad Usman Naeem" class="photo" />
+          <div class="photo-frame">
+            <img src="usman-naeem.png" alt="Muhammad Usman Naeem" class="photo" />
+          </div>
 
           <div class="contact-block">
             <p><span class="contact-label">Email:</span> <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a></p>
