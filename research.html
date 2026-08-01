@@ -88,23 +88,58 @@
       font-size: 18px;
     }
 
-    .paper-description {
-      max-width: 760px;
-      margin: 0 0 8px;
-      font-size: 19px;
-    }
-
-    .paper-meta {
+    .paper-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0;
       font-size: 16px;
       color: #6b7280;
     }
 
-    .paper-meta a {
+    .abstract-toggle {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: none;
+      color: #111111;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .abstract-toggle:hover {
+      text-decoration: underline;
+    }
+
+    .abstract-toggle:focus-visible {
+      outline: 2px solid #176b9a;
+      outline-offset: 3px;
+    }
+
+    .toggle-icon {
+      display: inline-block;
+      width: 12px;
+      margin-right: 3px;
+      font-size: 12px;
+    }
+
+    .paper-description {
+      max-width: 760px;
+      margin: 10px 0 8px;
+      font-size: 19px;
+    }
+
+    .paper-description[hidden] {
+      display: none;
+    }
+
+    .paper-actions a {
       color: #111111;
       text-decoration: none;
     }
 
-    .paper-meta a:hover {
+    .paper-actions a:hover {
       text-decoration: underline;
     }
 
@@ -117,6 +152,7 @@
 
     .separator {
       margin: 0 10px;
+      color: #6b7280;
     }
 
     @media (max-width: 700px) {
@@ -155,7 +191,7 @@
 
       .paper-coauthors,
       .paper-description,
-      .paper-meta {
+      .paper-actions {
         font-size: 17px;
       }
     }
@@ -183,7 +219,34 @@
             The Idle Margin: Why Everyday Conservation Fails
           </p>
 
-          <p class="paper-description">
+          <div class="paper-actions">
+            <button
+              class="abstract-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="abstract-idle-margin"
+            >
+              <span class="toggle-icon" aria-hidden="true">▸</span>Abstract
+            </button>
+
+            <span class="separator">|</span>
+            <span class="paper-status">Draft available upon request</span>
+            <span class="separator">|</span>
+
+            <a
+              href="https://www.socialscienceregistry.org/trials/16449"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AEA Registry
+            </a>
+          </div>
+
+          <p
+            class="paper-description"
+            id="abstract-idle-margin"
+            hidden
+          >
             This paper asks why privately and socially beneficial conservation
             fails when it requires repeated action. I study vehicle idling in a
             randomised field experiment with 6,621 private vehicles in Pakistan,
@@ -197,18 +260,6 @@
             contrast, activating the reminder increases idling by 1.0 minute
             relative to an otherwise identical no-reminder arm. Relying on the
             device weakens drivers’ own monitoring and delays corrective action.
-          </p>
-
-          <p class="paper-meta">
-            <span class="paper-status">Draft available upon request</span>
-            <span class="separator">|</span>
-            <a
-              href="https://www.socialscienceregistry.org/trials/16449"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              AEA Registry
-            </a>
           </p>
         </div>
       </section>
@@ -226,19 +277,20 @@
             Hayat)
           </p>
 
-          <p class="paper-description">
-            This paper studies how households respond when electricity prices
-            change at some margins but not others. In a field experiment with
-            1,731 households in rural Pakistan, we randomise 30% subsidies across
-            different blocks of an increasing-block tariff, using nonlinear
-            pricing to separate marginal-price incentives from average-price
-            bill relief and examine effects on electricity use, bills, payments,
-            and arrears.
-          </p>
+          <div class="paper-actions">
+            <button
+              class="abstract-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="abstract-subsidies"
+            >
+              <span class="toggle-icon" aria-hidden="true">▸</span>Abstract
+            </button>
 
-          <p class="paper-meta">
+            <span class="separator">|</span>
             <span class="paper-status">Draft available upon request</span>
             <span class="separator">|</span>
+
             <a
               href="https://www.socialscienceregistry.org/trials/10777"
               target="_blank"
@@ -246,6 +298,20 @@
             >
               AEA Registry
             </a>
+          </div>
+
+          <p
+            class="paper-description"
+            id="abstract-subsidies"
+            hidden
+          >
+            This paper studies how households respond when electricity prices
+            change at some margins but not others. In a field experiment with
+            1,731 households in rural Pakistan, we randomise 30% subsidies across
+            different blocks of an increasing-block tariff, using nonlinear
+            pricing to separate marginal-price incentives from average-price
+            bill relief and examine effects on electricity use, bills, payments,
+            and arrears.
           </p>
         </div>
 
@@ -257,19 +323,20 @@
             Hayat)
           </p>
 
-          <p class="paper-description">
-            This paper studies whether religious authority can strengthen state
-            capacity where formal enforcement is weak. In a field experiment in
-            Pakistan, we randomise anti-theft messages delivered through Friday
-            sermons across electricity feeders and combine this with a nested
-            household subsidy experiment to study effects on power theft, bill
-            payment, collection losses, and the interaction between moral and
-            financial incentives.
-          </p>
+          <div class="paper-actions">
+            <button
+              class="abstract-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="abstract-power-theft"
+            >
+              <span class="toggle-icon" aria-hidden="true">▸</span>Abstract
+            </button>
 
-          <p class="paper-meta">
+            <span class="separator">|</span>
             <span class="paper-status">Draft available upon request</span>
             <span class="separator">|</span>
+
             <a
               href="https://www.socialscienceregistry.org/trials/11847"
               target="_blank"
@@ -277,6 +344,20 @@
             >
               AEA Registry
             </a>
+          </div>
+
+          <p
+            class="paper-description"
+            id="abstract-power-theft"
+            hidden
+          >
+            This paper studies whether religious authority can strengthen state
+            capacity where formal enforcement is weak. In a field experiment in
+            Pakistan, we randomise anti-theft messages delivered through Friday
+            sermons across electricity feeders and combine this with a nested
+            household subsidy experiment to study effects on power theft, bill
+            payment, collection losses, and the interaction between moral and
+            financial incentives.
           </p>
         </div>
 
@@ -290,19 +371,20 @@
             Hayat)
           </p>
 
-          <p class="paper-description">
-            This paper studies whether hardening the grid or increasing
-            enforcement is more effective at reducing electricity theft. In a
-            field experiment with LESCO and the Ministry of Energy in Pakistan,
-            we randomise 120 high-loss transformers to theft-resistant
-            infrastructure, enhanced audit-based enforcement, or status-quo
-            operations, and study effects on power losses, bill payment,
-            consumer regularisation, arrears, and legal electricity use.
-          </p>
+          <div class="paper-actions">
+            <button
+              class="abstract-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="abstract-hardening-grid"
+            >
+              <span class="toggle-icon" aria-hidden="true">▸</span>Abstract
+            </button>
 
-          <p class="paper-meta">
+            <span class="separator">|</span>
             <span class="paper-status">Draft in progress</span>
             <span class="separator">|</span>
+
             <a
               href="https://www.socialscienceregistry.org/trials/15084"
               target="_blank"
@@ -310,6 +392,20 @@
             >
               AEA Registry
             </a>
+          </div>
+
+          <p
+            class="paper-description"
+            id="abstract-hardening-grid"
+            hidden
+          >
+            This paper studies whether hardening the grid or increasing
+            enforcement is more effective at reducing electricity theft. In a
+            field experiment with LESCO and the Ministry of Energy in Pakistan,
+            we randomise 120 high-loss transformers to theft-resistant
+            infrastructure, enhanced audit-based enforcement, or status-quo
+            operations, and study effects on power losses, bill payment,
+            consumer regularisation, arrears, and legal electricity use.
           </p>
         </div>
       </section>
@@ -326,7 +422,25 @@
             (with Steve Cicala and Kyle Emerick)
           </p>
 
-          <p class="paper-description">
+          <div class="paper-actions">
+            <button
+              class="abstract-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="abstract-small-farms"
+            >
+              <span class="toggle-icon" aria-hidden="true">▸</span>Abstract
+            </button>
+
+            <span class="separator">|</span>
+            <span class="paper-status">Design in progress</span>
+          </div>
+
+          <p
+            class="paper-description"
+            id="abstract-small-farms"
+            hidden
+          >
             This project studies whether the environmental costs of small-scale
             farming arise partly from coordination failures. Using a diagnostic
             survey of rice farmers in Punjab, Pakistan, we study timing pressure,
@@ -334,10 +448,6 @@
             services, and use the evidence to design a field pilot testing
             whether neighbouring smallholders can make cleaner residue
             management viable.
-          </p>
-
-          <p class="paper-meta">
-            <span class="paper-status">Design in progress</span>
           </p>
         </div>
 
@@ -350,7 +460,25 @@
             (with Michael Greenstone)
           </p>
 
-          <p class="paper-description">
+          <div class="paper-actions">
+            <button
+              class="abstract-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="abstract-pollution-visible"
+            >
+              <span class="toggle-icon" aria-hidden="true">▸</span>Abstract
+            </button>
+
+            <span class="separator">|</span>
+            <span class="paper-status">Design in progress</span>
+          </div>
+
+          <p
+            class="paper-description"
+            id="abstract-pollution-visible"
+            hidden
+          >
             This project studies whether making industrial pollution visible
             can improve environmental accountability. In collaboration with the
             Punjab Industries Department and Punjab Urban Unit, we use
@@ -359,13 +487,24 @@
             these ratings induces cleaner practices and pollution-control
             investment.
           </p>
-
-          <p class="paper-meta">
-            <span class="paper-status">Design in progress</span>
-          </p>
         </div>
       </section>
     </main>
   </div>
+
+  <script>
+    document.querySelectorAll(".abstract-toggle").forEach((button) => {
+      button.addEventListener("click", () => {
+        const abstractId = button.getAttribute("aria-controls");
+        const abstract = document.getElementById(abstractId);
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+        const icon = button.querySelector(".toggle-icon");
+
+        button.setAttribute("aria-expanded", String(!isExpanded));
+        abstract.hidden = isExpanded;
+        icon.textContent = isExpanded ? "▸" : "▾";
+      });
+    });
+  </script>
 </body>
 </html>
