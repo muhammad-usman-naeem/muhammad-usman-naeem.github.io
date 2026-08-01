@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research | Muhammad Usman Naeem</title>
+
   <style>
     body {
       margin: 0;
@@ -27,17 +28,17 @@
     }
 
     .name {
+      margin: 0;
       font-size: 38px;
       font-weight: 500;
-      margin: 0;
     }
 
     nav a {
       margin-left: 28px;
-      text-decoration: none;
       color: #111111;
       font-size: 20px;
       font-weight: 500;
+      text-decoration: none;
     }
 
     nav a:hover {
@@ -45,8 +46,8 @@
     }
 
     nav a.active {
-      text-decoration: underline;
       color: #111111;
+      text-decoration: underline;
     }
 
     .section {
@@ -54,11 +55,11 @@
     }
 
     .section-title {
+      margin: 0 0 22px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #d9dee2;
       font-size: 22px;
       font-weight: 600;
-      border-bottom: 1px solid #d9dee2;
-      padding-bottom: 5px;
-      margin: 0 0 22px 0;
     }
 
     .paper {
@@ -70,27 +71,27 @@
     }
 
     .paper-title {
-      font-weight: 600;
+      margin: 0 0 6px;
       font-size: 20px;
-      margin: 0 0 6px 0;
+      font-weight: 600;
     }
 
     .jmp-title {
-      color: #5f7f63;
+      color: #111111;
       font-size: 24px;
       font-weight: 700;
       line-height: 1.3;
     }
-    
+
     .paper-coauthors {
+      margin: 0 0 8px;
       font-size: 18px;
-      margin: 0 0 8px 0;
     }
 
     .paper-description {
-      font-size: 19px;
-      margin: 0 0 8px 0;
       max-width: 760px;
+      margin: 0 0 8px;
+      font-size: 19px;
     }
 
     .paper-meta {
@@ -99,8 +100,8 @@
     }
 
     .paper-meta a {
-      text-decoration: none;
       color: #111111;
+      text-decoration: none;
     }
 
     .paper-meta a:hover {
@@ -112,6 +113,10 @@
     }
 
     @media (max-width: 700px) {
+      .container {
+        padding: 40px 20px 60px;
+      }
+
       header {
         flex-direction: column;
         align-items: flex-start;
@@ -119,14 +124,14 @@
         margin-bottom: 40px;
       }
 
+      .name {
+        font-size: 32px;
+      }
+
       nav a {
         margin-left: 0;
         margin-right: 20px;
         font-size: 16px;
-      }
-
-      .name {
-        font-size: 32px;
       }
 
       .section-title {
@@ -149,10 +154,12 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <header>
       <p class="name">Muhammad Usman Naeem</p>
+
       <nav>
         <a href="index.html">Home</a>
         <a href="research.html" class="active">Research</a>
@@ -165,14 +172,36 @@
         <h2 class="section-title">Job Market Paper</h2>
 
         <div class="paper">
-          <p class="paper-title jmp-title">The Idle Margin: Why Everyday Conservation Fails</p>
-          <p class="paper-description">
-            This paper asks why privately and socially beneficial conservation fails when it requires repeated action. I study vehicle idling in a randomised field experiment with 6,621 private vehicles in Pakistan, using GPS trackers that record behaviour every 10 seconds. The experiment separately varies private information, social information, payments, and a real-time in-car reminder. Drivers widely misperceive whether prolonged warm-up benefits the engine and when shutting off begins to save fuel or reduce environmental harm. Private information reduces daily idling by 1.8 minutes, or 9% of the control mean. Social information and payments add little. By contrast, activating the reminder increases idling by 1.0 minute relative to an otherwise identical no-reminder arm. Relying on the device weakens drivers’ own monitoring and delays corrective action.
+          <p class="paper-title jmp-title">
+            The Idle Margin: Why Everyday Conservation Fails
           </p>
+
+          <p class="paper-description">
+            This paper asks why privately and socially beneficial conservation
+            fails when it requires repeated action. I study vehicle idling in a
+            randomised field experiment with 6,621 private vehicles in Pakistan,
+            using GPS trackers that record behaviour every 10 seconds. The
+            experiment separately varies private information, social
+            information, payments, and a real-time in-car reminder. Drivers
+            widely misperceive whether prolonged warm-up benefits the engine and
+            when shutting off begins to save fuel or reduce environmental harm.
+            Private information reduces daily idling by 1.8 minutes, or 9% of
+            the control mean. Social information and payments add little. By
+            contrast, activating the reminder increases idling by 1.0 minute
+            relative to an otherwise identical no-reminder arm. Relying on the
+            device weakens drivers’ own monitoring and delays corrective action.
+          </p>
+
           <p class="paper-meta">
             <span>Status: Working Paper</span>
             <span class="separator">|</span>
-            <a href="https://www.socialscienceregistry.org/trials/16449" target="_blank" rel="noopener noreferrer">AEA Registry</a>
+            <a
+              href="https://www.socialscienceregistry.org/trials/16449"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AEA Registry
+            </a>
           </p>
         </div>
       </section>
@@ -181,41 +210,99 @@
         <h2 class="section-title">Working Papers</h2>
 
         <div class="paper">
-          <p class="paper-title">Subsidies and Debt under Nonlinear Electricity Pricing</p>
-          <p class="paper-coauthors">(with Robin Burgess, Tim Dobermann, Michael Greenstone, and Faraz Hayat)</p>
-          <p class="paper-description">
-            This paper studies how households respond when electricity prices change at some margins but not others. In a field experiment with 1,731 households in rural Pakistan, we randomise 30% subsidies across different blocks of an increasing-block tariff, using nonlinear pricing to separate marginal-price incentives from average-price bill relief and examine effects on electricity use, bills, payments, and arrears.
+          <p class="paper-title">
+            Subsidies and Debt under Nonlinear Electricity Pricing
           </p>
+
+          <p class="paper-coauthors">
+            (with Robin Burgess, Tim Dobermann, Michael Greenstone, and Faraz
+            Hayat)
+          </p>
+
+          <p class="paper-description">
+            This paper studies how households respond when electricity prices
+            change at some margins but not others. In a field experiment with
+            1,731 households in rural Pakistan, we randomise 30% subsidies across
+            different blocks of an increasing-block tariff, using nonlinear
+            pricing to separate marginal-price incentives from average-price
+            bill relief and examine effects on electricity use, bills, payments,
+            and arrears.
+          </p>
+
           <p class="paper-meta">
             <span>Status: Working Paper</span>
             <span class="separator">|</span>
-            <a href="https://www.socialscienceregistry.org/trials/10777" target="_blank" rel="noopener noreferrer">AEA Registry</a>
+            <a
+              href="https://www.socialscienceregistry.org/trials/10777"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AEA Registry
+            </a>
           </p>
         </div>
 
         <div class="paper">
           <p class="paper-title">Preaching Against Power Theft</p>
-          <p class="paper-coauthors">(with Robin Burgess, Tim Dobermann, Michael Greenstone, and Faraz Hayat)</p>
-          <p class="paper-description">
-            This paper studies whether religious authority can strengthen state capacity where formal enforcement is weak. In a field experiment in Pakistan, we randomise anti-theft messages delivered through Friday sermons across electricity feeders and combine this with a nested household subsidy experiment to study effects on power theft, bill payment, collection losses, and the interaction between moral and financial incentives.
+
+          <p class="paper-coauthors">
+            (with Robin Burgess, Tim Dobermann, Michael Greenstone, and Faraz
+            Hayat)
           </p>
+
+          <p class="paper-description">
+            This paper studies whether religious authority can strengthen state
+            capacity where formal enforcement is weak. In a field experiment in
+            Pakistan, we randomise anti-theft messages delivered through Friday
+            sermons across electricity feeders and combine this with a nested
+            household subsidy experiment to study effects on power theft, bill
+            payment, collection losses, and the interaction between moral and
+            financial incentives.
+          </p>
+
           <p class="paper-meta">
             <span>Status: Writing</span>
             <span class="separator">|</span>
-            <a href="https://www.socialscienceregistry.org/trials/11847" target="_blank" rel="noopener noreferrer">AEA Registry</a>
+            <a
+              href="https://www.socialscienceregistry.org/trials/11847"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AEA Registry
+            </a>
           </p>
         </div>
 
         <div class="paper">
-          <p class="paper-title">Hardening the Grid: Technology versus Enforcement</p>
-          <p class="paper-coauthors">(with Robin Burgess, Tim Dobermann, Michael Greenstone, and Faraz Hayat)</p>
-          <p class="paper-description">
-            This paper studies whether hardening the grid or increasing enforcement is more effective at reducing electricity theft. In a field experiment with LESCO and the Ministry of Energy in Pakistan, we randomise 120 high-loss transformers to theft-resistant infrastructure, enhanced audit-based enforcement, or status-quo operations, and study effects on power losses, bill payment, consumer regularisation, arrears, and legal electricity use.
+          <p class="paper-title">
+            Hardening the Grid: Technology versus Enforcement
           </p>
+
+          <p class="paper-coauthors">
+            (with Robin Burgess, Tim Dobermann, Michael Greenstone, and Faraz
+            Hayat)
+          </p>
+
+          <p class="paper-description">
+            This paper studies whether hardening the grid or increasing
+            enforcement is more effective at reducing electricity theft. In a
+            field experiment with LESCO and the Ministry of Energy in Pakistan,
+            we randomise 120 high-loss transformers to theft-resistant
+            infrastructure, enhanced audit-based enforcement, or status-quo
+            operations, and study effects on power losses, bill payment,
+            consumer regularisation, arrears, and legal electricity use.
+          </p>
+
           <p class="paper-meta">
             <span>Status: Fieldwork</span>
             <span class="separator">|</span>
-            <a href="https://www.socialscienceregistry.org/trials/15084" target="_blank" rel="noopener noreferrer">AEA Registry</a>
+            <a
+              href="https://www.socialscienceregistry.org/trials/15084"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AEA Registry
+            </a>
           </p>
         </div>
       </section>
@@ -224,26 +311,52 @@
         <h2 class="section-title">Selected Work in Progress</h2>
 
         <div class="paper">
-          <p class="paper-title">Small Farms, Coordination, and Air Pollution</p>
-          <p class="paper-coauthors">(with Steve Cicala and Kyle Emerick)</p>
-          <p class="paper-description">
-            This project studies whether the environmental costs of small-scale farming arise partly from coordination failures. Using a diagnostic survey of rice farmers in Punjab, Pakistan, we study timing pressure, machinery access, residue value, and demand for coordinated baling services, and use the evidence to design a field pilot testing whether neighbouring smallholders can make cleaner residue management viable.
+          <p class="paper-title">
+            Small Farms, Coordination, and Air Pollution
           </p>
+
+          <p class="paper-coauthors">
+            (with Steve Cicala and Kyle Emerick)
+          </p>
+
+          <p class="paper-description">
+            This project studies whether the environmental costs of small-scale
+            farming arise partly from coordination failures. Using a diagnostic
+            survey of rice farmers in Punjab, Pakistan, we study timing pressure,
+            machinery access, residue value, and demand for coordinated baling
+            services, and use the evidence to design a field pilot testing
+            whether neighbouring smallholders can make cleaner residue
+            management viable.
+          </p>
+
           <p class="paper-meta">
             <span>Status: Design</span>
           </p>
         </div>
 
         <div class="paper">
-          <p class="paper-title">Making Pollution Visible: Emissions Disclosure</p>
-          <p class="paper-coauthors">(with Michael Greenstone)</p>
-          <p class="paper-description">
-            This project studies whether making industrial pollution visible can improve environmental accountability. In collaboration with the Punjab Industries Department and Punjab Urban Unit, we use third-party emissions monitoring to generate plant-level ratings for industrial units in Lahore, and test whether public disclosure of these ratings induces cleaner practices and pollution-control investment.
+          <p class="paper-title">
+            Making Pollution Visible: Emissions Disclosure
           </p>
+
+          <p class="paper-coauthors">
+            (with Michael Greenstone)
+          </p>
+
+          <p class="paper-description">
+            This project studies whether making industrial pollution visible
+            can improve environmental accountability. In collaboration with the
+            Punjab Industries Department and Punjab Urban Unit, we use
+            third-party emissions monitoring to generate plant-level ratings for
+            industrial units in Lahore, and test whether public disclosure of
+            these ratings induces cleaner practices and pollution-control
+            investment.
+          </p>
+
           <p class="paper-meta">
             <span>Status: Design</span>
           </p>
-        </div>        
+        </div>
       </section>
     </main>
   </div>
