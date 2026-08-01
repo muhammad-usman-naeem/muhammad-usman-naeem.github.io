@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Muhammad Usman Naeem</title>
+
   <style>
     body {
       margin: 0;
@@ -27,17 +28,17 @@
     }
 
     .name {
+      margin: 0;
       font-size: 38px;
       font-weight: 500;
-      margin: 0;
     }
 
     nav a {
       margin-left: 28px;
-      text-decoration: none;
       color: #111111;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 600;
+      text-decoration: none;
     }
 
     nav a:hover {
@@ -62,17 +63,16 @@
       width: 370px;
       height: auto;
       display: block;
-      margin-top: 0;
     }
 
     .contact-block {
       margin-top: 14px;
-      font-size: 16px;
+      font-size: 17px;
       line-height: 1.4;
     }
 
     .contact-block p {
-      margin: 0 0 6px 0;
+      margin: 0 0 6px;
     }
 
     .contact-block a {
@@ -93,16 +93,17 @@
     }
 
     .bio {
-      font-size: 19px;
-      margin: 0 0 14px 0;
+      margin: 0 0 14px;
+      font-size: 20px;
+      font-weight: 400;
     }
 
     .market {
-      font-weight: 500;
       margin-top: -6px;
       margin-bottom: 20px;
+      font-weight: 500;
     }
-    
+
     .bio a {
       color: #111111;
       text-decoration: underline;
@@ -115,6 +116,10 @@
     }
 
     @media (max-width: 700px) {
+      .container {
+        padding: 40px 20px 60px;
+      }
+
       header {
         flex-direction: column;
         align-items: flex-start;
@@ -122,11 +127,15 @@
         margin-bottom: 40px;
       }
 
+      .name {
+        font-size: 32px;
+      }
+
       nav a {
         margin-left: 0;
         margin-right: 20px;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
       }
 
       .intro-row {
@@ -137,20 +146,15 @@
 
       .photo {
         width: 210px;
-        margin-top: 0;
       }
 
       .contact-block {
-        font-size: 17px;
         margin-top: 12px;
+        font-size: 17px;
       }
 
       .text-block {
         max-width: 100%;
-      }
-
-      .name {
-        font-size: 32px;
       }
 
       .bio {
@@ -159,10 +163,12 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <header>
       <p class="name">Muhammad Usman Naeem</p>
+
       <nav>
         <a href="research.html">Research</a>
         <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
@@ -172,20 +178,51 @@
     <main class="main">
       <div class="intro-row">
         <div class="photo-block">
-          <img src="usman-naeem.png" alt="Muhammad Usman Naeem" class="photo" />
+          <img
+            src="usman-naeem.png"
+            alt="Muhammad Usman Naeem"
+            class="photo"
+          />
 
           <div class="contact-block">
-            <p><span class="contact-label">Email:</span> <a href="mailto:usman.naeem@tufts.edu">usman.naeem@tufts.edu</a></p>
-            <p><span class="contact-label">X:</span> <a href="https://x.com/usmann1504" target="_blank" rel="noopener noreferrer">@usmann1504</a></p>
+            <p>
+              <span class="contact-label">Email:</span>
+              <a href="mailto:usman.naeem@tufts.edu">
+                usman.naeem@tufts.edu
+              </a>
+            </p>
+
+            <p>
+              <span class="contact-label">X:</span>
+              <a
+                href="https://x.com/usmann1504"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @usmann1504
+              </a>
+            </p>
           </div>
         </div>
 
         <div class="text-block">
           <p class="bio">
             I am a Ph.D. candidate in Economics and Public Policy at
-            <a href="https://as.tufts.edu/economics/" target="_blank" rel="noopener noreferrer">Tufts University</a>
+            <a
+              href="https://as.tufts.edu/economics/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tufts University
+            </a>
             and a 2026 Visiting Fellow in the Department of Economics at
-            <a href="https://www.economics.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard University</a>.
+            <a
+              href="https://www.economics.harvard.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Harvard University
+            </a>.
           </p>
 
           <p class="bio market">
@@ -193,12 +230,23 @@
           </p>
 
           <p class="bio">
-            My research lies at the intersection of development, environmental, and behavioural economics. I study why households and firms make costly energy and environmental choices, and how policy can improve those choices and their consequences for pollution and welfare. I use field experiments and administrative data from Pakistan.
+            My research lies at the intersection of development,
+            environmental, and behavioural economics. I study why households
+            and firms make costly energy and environmental choices, and how
+            policy can improve those choices and their consequences for
+            pollution and welfare. I use field experiments and administrative
+            data from Pakistan.
           </p>
 
           <p class="bio">
             Previously, I was a Country Economist at the
-            <a href="https://www.theigc.org/" target="_blank" rel="noopener noreferrer">International Growth Centre</a>.
+            <a
+              href="https://www.theigc.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              International Growth Centre
+            </a>.
           </p>
         </div>
       </div>
